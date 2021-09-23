@@ -1,6 +1,7 @@
 import React from "react";
 import StarRating from "./StarRating";
 import { useColors } from "./color-hooks";
+import Phrase from "./Phrase";
 
 export default function Color({ id, title, color, rating }) {
   const { rateColor, removeColor } = useColors();
@@ -13,6 +14,7 @@ export default function Color({ id, title, color, rating }) {
         selectedStar={rating}
         onRate={(rating) => rateColor(id, rating)}
       ></StarRating>
+      <Phrase />
     </section>
   );
 }
