@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Checkbox() {
   const [checked, setChecked] = useState(false);
 
-  alert(`checked: ${checked.toString()}`);
+  useEffect(() => {
+    console.log(checked ? "Yes,Checked" : "No, not checked");
+  });
+
+  useEffect(() => {
+    localStorage.setItem("checkbox-value", checked);
+  });
 
   return (
     <>
@@ -12,7 +18,7 @@ export default function Checkbox() {
         value={checked}
         onChange={() => setChecked((checked) => !checked)}
       ></input>
-      {checked ? "checked" : "not checked"}
+      &nbsp;{checked ? "checked" : "not checked"}
     </>
   );
 }

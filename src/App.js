@@ -1,6 +1,7 @@
 import React from "react";
 import ColorList from "./components/ColorList";
 import AddColorForm from "./components/AddColorForm";
+import Checkbox from "./components/Checkbox";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         <AddColorForm />
         <ColorList />
+        <Checkbox />
       </header>
     </div>
   );
