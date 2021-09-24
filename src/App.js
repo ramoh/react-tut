@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import { PureCat } from "./basic/Cat";
+import React from "react";
+import Git from "./ch08/GitHubUser";
 
 function App() {
-  const [cats, setCats] = useState(["Biscute", "Jungle", "Outlaw"]);
   return (
     <div className="App" style={{ padding: "15px" }}>
       <header className="App-header">
-        {cats.map((name, i) => (
+        <Git />
+        {/*cats.map((name, i) => (
           <PureCat
             key={i}
             name={name}
             meow={(name) => console.log(`${name} has meowed`)}
-          />
         ))}
         <button onClick={() => setCats([...cats, prompt("Name cat")])}>
           Add a cat
