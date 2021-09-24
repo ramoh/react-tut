@@ -1,11 +1,11 @@
 import React from "react";
-import Git from "./ch08/GitHubUser";
+import AAP from "./ch08/RenderProperty";
 
 function App() {
   return (
     <div className="App" style={{ padding: "15px" }}>
       <header className="App-header">
-        <Git />
+        <AAP />
         {/*cats.map((name, i) => (
           <PureCat
             key={i}
