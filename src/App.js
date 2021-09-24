@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PureCat } from "./components/Cat";
+import { PureCat } from "./basic/Cat";
 
 function App() {
   const [cats, setCats] = useState(["Biscute", "Jungle", "Outlaw"]);
