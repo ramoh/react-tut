@@ -1,13 +1,15 @@
 import React from "react";
-import ColorList from "./components/ColorList";
-import AddColorForm from "./components/AddColorForm";
+import User from "./components/User";
 
 function App() {
   return (
     <div className="App" style={{ padding: "15px" }}>
       <header className="App-header">
+        <User />
+        {/*
         <AddColorForm />
         <ColorList />
+        */}
       </header>
     </div>
   );

@@ -8,7 +8,7 @@ export default function WordCount({ children = "" }) {
   useEffect(() => {
     console.log("fresh render");
   }, [words]);
-  useLayoutEffect(() => console.log("useLayoutEffect"));
+  useLayoutEffect(() => console.log("useLayoutEffect"), [words]);
   return (
     <>
       <p>{children}</p>

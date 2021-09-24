@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 
 export default function Checkbox() {
-  const [checked, setChecked] = useState(false);
+  const [checked, toggle] = useReducer((checked) => !checked, false);
 
   useEffect(() => {
     console.log(checked ? "Yes,Checked" : "No, not checked");
@@ -13,11 +13,7 @@ export default function Checkbox() {
 
   return (
     <>
-      <input
-        type="checkbox"
-        value={checked}
-        onChange={() => setChecked((checked) => !checked)}
-      ></input>
+      <input type="checkbox" value={checked} onChange={toggle}></input>
       &nbsp;{checked ? "checked" : "not checked"}
     </>
   );

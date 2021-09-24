@@ -1,4 +1,5 @@
 import React from "react";
+import Checkbox from "./Checkbox";
 import { useColors } from "./color-hooks";
 import Phrase from "./Phrase";
 import StarRating from "./StarRating";
@@ -17,6 +18,7 @@ export default function Color({ id, title, color, rating }) {
       ></StarRating>
       <Phrase />
       <WordCount>{title}</WordCount>
+      <Checkbox />
     </section>
   );
 }
