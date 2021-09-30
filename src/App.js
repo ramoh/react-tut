@@ -1,5 +1,5 @@
 import React from "react";
-import AAP from "./ch08/RenderProperty";
+import AAP from "./ch08/App";
 
 function App() {
   return (
