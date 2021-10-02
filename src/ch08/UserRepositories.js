@@ -14,6 +14,7 @@ export default function UserRepositories({
         return (
           <RepoMenu
             repositories={data}
+            login={login}
             selectedRepo={selectedRepo}
             onSelect={onSelect}
           ></RepoMenu>
