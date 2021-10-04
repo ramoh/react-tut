@@ -1,6 +1,5 @@
 import React from "react";
 import Fetch from "./Fetch";
-import UserRepositories from "./UserRepositories";
 
 function UserDetail({ data }) {
   return (
@@ -11,10 +10,6 @@ function UserDetail({ data }) {
         {data.name && <p>{data.name}</p>}
         {data.location && <p>{data.location}</p>}
       </div>
-      <UserRepositories
-        login={data.login}
-        onSelect={(repoName) => console.log(`${repoName} selected`)}
-      ></UserRepositories>
     </div>
   );
 }

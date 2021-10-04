@@ -1,11 +1,7 @@
 import React from "react";
 import Fetch from "./Fetch";
 import { RepoMenu } from "./RepoMenu";
-export default function UserRepositories({
-  login,
-  selectedRepo,
-  onSelect = (f) => f,
-}) {
+export default function UserRepositories({ login, repo, onSelect = (f) => f }) {
   return (
     <Fetch
       uri={`https://api.github.com/users/${login}/repos`}
@@ -14,8 +10,7 @@ export default function UserRepositories({
         return (
           <RepoMenu
             repositories={data}
-            login={login}
-            selectedRepo={selectedRepo}
+            seleted={repo}
             onSelect={onSelect}
           ></RepoMenu>
         );
