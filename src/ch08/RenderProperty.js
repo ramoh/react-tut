@@ -8,7 +8,11 @@ const bigList = [...Array(5000)].map(() => ({
   avatar: faker.internet.avatar(),
 }));
 
-function List({ data = [], renderItem, renderEmpty }) {
+export function List({
+  data = [],
+  renderItem,
+  renderEmpty = <p>Nothing to display</p>,
+}) {
   return !data.length ? (
     renderEmpty
   ) : (
