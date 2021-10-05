@@ -1,5 +1,5 @@
 import React from "react";
-import AAP from "./ch08/graphq-client";
+import AAP from "./ch09/App";
 
 function App() {
   return (

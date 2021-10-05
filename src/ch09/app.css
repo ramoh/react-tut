@@ -1,0 +1,13 @@
+.site-container {
+  background-color: blue;
+  border-color: blue;
+  border-style: dashed;
+  min-height: 950px;
+}
+
+.error {
+  background-color: #efacac;
+  border: double 4px darkred;
+  color: darkred;
+  padding: 1em;
+}
